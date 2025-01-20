@@ -1,3 +1,5 @@
+# Note that this repo is only my backup for new device settings. If you don't know what this is used for, DONT USE THIS REPO!
+
 # Nsc zsh theme
 
 Works for zsh with oh-my-zsh installed.
