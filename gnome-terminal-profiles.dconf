@@ -1,0 +1,10 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(23,20,33)'
+bold-is-bright=true
+cursor-shape='underline'
+foreground-color='rgb(208,207,204)'
+palette=['rgb(46,52,54)', 'rgb(224,134,133)', 'rgb(169,234,188)', 'rgb(250,252,191)', 'rgb(159,208,213)', 'rgb(163,71,186)', 'rgb(70,163,176)', 'rgb(217,215,224)', 'rgb(94,92,100)', 'rgb(246,97,81)', 'rgb(51,209,122)', 'rgb(233,173,12)', 'rgb(42,123,222)', 'rgb(192,97,203)', 'rgb(100,226,228)', 'rgb(255,255,255)']
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=false
+visible-name='nsc'
