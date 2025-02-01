@@ -1,3 +1,4 @@
+```bash
 dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
 
 dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
@@ -9,7 +10,10 @@ Host hostname
     User username
     IdentityFile ~/.ssh/id_ed25519_xxx
     IdentitiesOnly yes
+```
 
 In case ubuntu missing the nvidia drive after doing do-release-update, use the command.
 
+```bash
 sudo ubuntu-drivers autoinstall
+```
