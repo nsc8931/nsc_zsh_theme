@@ -9,3 +9,7 @@ Host hostname
     User username
     IdentityFile ~/.ssh/id_ed25519_xxx
     IdentitiesOnly yes
+
+In case ubuntu missing the nvidia drive after doing do-release-update, use the command.
+
+sudo ubuntu-drivers autoinstall
