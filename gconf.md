@@ -24,3 +24,11 @@ modify the snap refresh
 sudo snap set system refresh.timer=00:00~24:00
 sudo snap refresh
 ```
+
+install anaconda3
+
+```bash
+cd /tmp
+curl -O https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh
+bash Anaconda3-latest-Linux-x86_64.sh
+```
