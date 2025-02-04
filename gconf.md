@@ -17,3 +17,10 @@ In case ubuntu missing the nvidia drive after doing do-release-update, use the c
 ```bash
 sudo ubuntu-drivers autoinstall
 ```
+
+modify the snap refresh
+
+```bash
+sudo snap set system refresh.timer=00:00~24:00
+sudo snap refresh
+```
