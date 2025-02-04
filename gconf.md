@@ -29,6 +29,6 @@ install anaconda3
 
 ```bash
 cd /tmp
-curl -O https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh
+curl -O #get the link for the lastest version
 bash Anaconda3-latest-Linux-x86_64.sh
 ```
