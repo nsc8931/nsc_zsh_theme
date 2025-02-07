@@ -46,3 +46,16 @@ For setting different github account, in the homefolder create the file ```.gitc
 [includeIf "gitdir/i:/absolute/path/to/folder/"]
     path = /absolute/path/to/home/folder/.gitconfig-second
 ```
+
+```bash
+git filter-branch --env-filter '
+if [ "$GIT_COMMITTER_EMAIL" = "wrong@example.com" ]; then
+    GIT_COMMITTER_NAME="CorrectUsername"
+    GIT_COMMITTER_EMAIL="correct@example.com"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "wrong@example.com" ]; then
+    GIT_AUTHOR_NAME="CorrectUsername"
+    GIT_AUTHOR_EMAIL="correct@example.com"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
