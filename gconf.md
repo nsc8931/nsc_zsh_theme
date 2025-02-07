@@ -8,7 +8,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 Host hostname
     HostName ip
     User username
-    IdentityFile ~/.ssh/id_ed25519_xxx
+    IdentityFile /absolute/path/to/home/folder/.ssh/id_ed25519_xxx
     IdentitiesOnly yes
 ```
 
