@@ -32,3 +32,17 @@ cd /tmp
 curl -O #get the link for the lastest version
 bash Anaconda3-latest-Linux-x86_64.sh
 ```
+
+For setting different github account, in the homefolder create the file ```.gitconfig```
+
+```bash
+[user]
+	name = 
+	email = 
+
+[includeIf "gitdir/i:/absolute/path/to/folder/"]
+    path = /absolute/path/to/home/folder/.gitconfig-nsc8931
+
+[includeIf "gitdir/i:/absolute/path/to/folder/"]
+    path = /absolute/path/to/home/folder/.gitconfig-second
+```
