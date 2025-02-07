@@ -30,7 +30,7 @@ install anaconda3
 ```bash
 cd /tmp
 curl -O #get the link for the lastest version
-bash Anaconda3-latest-Linux-x86_64.sh
+bash #the name for the lastest Anaconda3-x.x.x-Linux-x86_64.sh
 ```
 
 For setting different github account, in the homefolder create the file ```.gitconfig```
