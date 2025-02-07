@@ -37,8 +37,8 @@ For setting different github account, in the homefolder create the file ```.gitc
 
 ```bash
 [user]
-	name = 
-	email = 
+    name = 
+    email = 
 
 [includeIf "gitdir/i:/absolute/path/to/folder/"]
     path = /absolute/path/to/home/folder/.gitconfig-nsc8931
