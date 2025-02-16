@@ -59,3 +59,9 @@ if [ "$GIT_AUTHOR_EMAIL" = "wrong@example.com" ]; then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
+
+check the system hardware info
+
+```bash
+sudo lshw -short
+```
