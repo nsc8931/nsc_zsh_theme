@@ -65,3 +65,45 @@ check the system hardware info
 ```bash
 sudo lshw -short
 ```
+
+set mount storage
+
+```bash
+lsblk -o NAME,MOUNTPOINT,LABEL,FSTYPE
+ls -l /dev/disk/by-label/
+sudo mkdir -p /mnt/860evo
+mkdir -p /home/user/860evo_bind
+sudo nano /etc/fstab
+
+/dev/disk/by-label/860evo  /mnt/860evo  ext4  defaults,noatime  0 2
+/mnt/860evo /home/user/860evo_bind none bind 0 0
+
+sudo systemctl daemon-reload
+sudo mount -a
+df -h | grep 860evo
+sudo groupadd storage
+sudo usermod -aG storage user
+newgrp storage
+sudo chown root:storage /mnt/860evo
+sudo chmod 2775 /mnt/860evo
+ls -ld /mnt/860evo
+
+drwxrwsr-x 2 root storage 4096
+
+sudo setfacl -R -m g::rwx /mnt/860evo
+getfacl /mnt/860evo
+
+getfacl: Removing leading '/' from absolute path names
+# file: mnt/860evo
+# owner: root
+# group: storage
+# flags: -s-
+user::rwx
+group::rwx
+other::r-x
+default:user::rwx
+default:group::rwx
+default:other::r-x
+
+drwxrwsr-x+ 2 root storage 4096
+```
