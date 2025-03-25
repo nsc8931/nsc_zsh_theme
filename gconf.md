@@ -22,6 +22,7 @@ modify the snap refresh
 
 ```bash
 sudo snap set system refresh.timer=00:00~24:00
+sudo snap set system refresh.retain=2
 sudo snap refresh
 ```
 
