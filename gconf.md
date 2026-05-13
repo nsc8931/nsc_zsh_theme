@@ -108,3 +108,23 @@ default:other::r-x
 
 drwxrwsr-x+ 2 root storage 4096
 ```
+
+enable xrdp for remote desktop login
+
+```
+sudo apt update
+sudo apt install xrdp
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+sudo systemctl status xrdp
+sudo adduser xrdp ssl-cert
+sudo systemctl restart xrdp
+sudo nano /etc/gdm3/custom.conf
+# disable wayland in the conf file
+sudo systemctl restart gdm3
+# add gnome session
+echo "gnome-session" > ~/.xsession
+chmod +x ~/.xsession
+sudo systemctl restart xrdp
+sudo reboot
+```
