@@ -26,12 +26,12 @@ sudo snap set system refresh.retain=2
 sudo snap refresh
 ```
 
-install anaconda3
+install miniforge3 instead of anaconda3
 
 ```bash
-cd /tmp
-curl -O #get the link for the lastest version
-bash #the name for the lastest Anaconda3-x.x.x-Linux-x86_64.sh
+cd ~
+wget #get the link for the lastest version
+bash #the name for the lastest miniforge3.sh
 ```
 
 For setting different github account, in the homefolder create the file ```.gitconfig```
