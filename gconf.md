@@ -18,6 +18,11 @@ In case ubuntu missing the nvidia drive after doing do-release-update, use the c
 sudo ubuntu-drivers autoinstall
 ```
 
+Also disable the unattended upgrades to avoid kernel not matching the nvidia driver, do upgrade manually
+```
+sudo systemctl disable --now unattended-upgrades
+```
+
 modify the snap refresh
 
 ```bash
