@@ -21,6 +21,8 @@ sudo ubuntu-drivers autoinstall
 Also disable the unattended upgrades to avoid kernel not matching the nvidia driver, do upgrade manually
 ```
 sudo systemctl disable --now unattended-upgrades
+sudo systemctl disable --now apt-daily.timer
+sudo systemctl disable --now apt-daily-upgrade.timer
 ```
 
 modify the snap refresh
