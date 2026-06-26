@@ -41,6 +41,16 @@ wget #get the link for the lastest version
 bash #the name for the lastest miniforge3.sh
 ```
 
+file sharing via uploadserver
+
+```
+mamba create -n fs python=3.11
+conda activate fs
+python -m pip install uploadserver
+cd path/to/the/shared/folder
+python -m uploadserver 8000
+```
+
 For setting different github account, in the homefolder create the file ```.gitconfig```
 
 ```bash
