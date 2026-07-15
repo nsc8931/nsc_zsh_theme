@@ -51,6 +51,8 @@ cd path/to/the/shared/folder
 python -m uploadserver 8000
 ```
 
+netdata install, use this link https://learn.netdata.cloud/docs/netdata-agent/installation/linux#run-the-one-line-install-command
+
 For setting different github account, in the homefolder create the file ```.gitconfig```
 
 ```bash
