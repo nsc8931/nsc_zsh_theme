@@ -86,6 +86,8 @@ check the system hardware info
 sudo lshw -short
 ```
 
+for exfat format, use ```exfat-fuse``` instead of the kernel module
+
 set mount storage
 
 ```bash
